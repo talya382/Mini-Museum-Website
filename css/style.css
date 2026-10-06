@@ -51,9 +51,15 @@ nav {
     display: flex;
     gap: 30px;
     justify-content: center;
-    text-align: center;
+    
 }
+#logo{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    margin: 30px auto;
 
+}
 footer {
     background-color: #222222;
     color: #f5f3ef;
@@ -182,6 +188,8 @@ ul{
     color: #555555;
     width: 700px;
     text-align: center;
+    display: flex;
+    margin: 30px auto;
 }
 
 main article h2 {
@@ -217,11 +225,27 @@ footer p {
     border-radius: 8px;
 }
 
-#popap1 {
+#popap1,
+#popap2,
+#popap3,
+#popap4,
+#popap5,
+#popap6,
+#popap7,
+#popap8,
+#popap9 {
     display: none;
 }
 
-#popap1:target {
+#popap1:target,
+#popap2:target,
+#popap3:target,
+#popap4:target,
+#popap5:target,
+#popap6:target,
+#popap7:target,
+#popap8:target,
+#popap9:target {
     display: block;
 }
 
