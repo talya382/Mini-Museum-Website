@@ -1,58 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Art Museum - Home</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Mini Art Museum</h1>
-      <nav>
-        <ul class="pages">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="artists.html">Artists</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="visit.html">Visit &amp; Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <section>
-        <img src="img/logo.svg" alt="Mini Art Museum logo" width="120" />
-        <h2>Welcome to the Mini Art Museum</h2>
-        <p id="welcome-text">
-          Discover masterpieces by some of the greatest painters in history.
-          Meet the artists, explore the gallery and plan your visit.
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Art Museum - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <section >
+  <nav>
+    <ul>
+        <li class="mini-card">
+            <a href="artists.html">artists</a>
+        </li>
+
+        <li class="mini-card">
+            <a href="gallery.html">gallery</a>
+        </li>
+
+        <li class="mini-card">
+            <a href="visit.html">visit</a>
+        </li>
+
+        <li class="mini-card">
+            <a href="index.html">home</a>
+        </li>
+    </ul>
+</nav>
+  </section>
+    <section class="previews">
+      <img src="../03---HTML-CSS-mini-museum/img/logo.svg">
+      <p id="welcome">
+        This museum is dedicated to remembering the events of September 11, 2001. Through photographs, stories, and
+        historical information, visitors can learn about the events of that day and remember the people whose lives were
+        changed forever.
+      </p>
+    </section>
+    <section>
+      <h2 id="welcom-museum2">Discover what you can find</h2>
+      <section class="previews">
+      <section class="card">
+        <h2>Artists</h2>
+        <figure>
+        <img src="../03---HTML-CSS-mini-museum/img/artist1.jpg">
+       <figcaption>Meet the artists</figcaption> 
+      </figure> 
+       <a href="artists.html">artists</a>
       </section>
+      <section class="card">
+        <h2>Gallery</h2>
+        <figure>
+        <img src="../03---HTML-CSS-mini-museum/img/artwork4.jpg">
+       <figcaption>Explore the artworks</figcaption> 
+      </figure>
+        <a href="gallery.html">gallery</a>
+      </section>
+      <section class="card">
+        <h2>Visit</h2>
+        <figure>
+        <img src="../03---HTML-CSS-mini-museum/img/maps.webp">
+        <figcaption>Plan your visit</figcaption> 
+      </figure>
+        <a href="visit.html">visit</a>
+      </section>
+    </section>
+    </section>
 
-      <section>
-        <h2>Explore the Museum</h2>
+  </header>
+  <main>
+    <footer>
+      <div id="Museum_Hours">
+        <h1>Museum Hours</h1>
         <ul>
-          <li>
-            <a href="artists.html">Artists</a> - meet Vincent van Gogh, Claude
-            Monet and Rembrandt.
-          </li>
-          <li>
-            <a href="gallery.html">Gallery</a> - browse famous paintings from
-            our collection.
-          </li>
-          <li>
-            <a href="visit.html">Visit &amp; Contact</a> - hours, location and
-            contact info.
-          </li>
+          <li>Monday–Thursday: 10:00 AM – 6:00 PM</li>
+          <li>Friday: 10:00 AM – 2:00 PM</li>
+          <li> Saturday–Sunday: 10:00 AM – 6:00 PM</li>
         </ul>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <ul class="footer-list">
-        <li id="museum-location">Sokolov 8 Be'er Sheva</li>
-        <li id="footer-museum-hours">8:00-20:00</li>
-      </ul>
+      </div>
+      <iframe id="maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3377.5575241984707!2d34.846336884833505!3d32.16223738116202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d480d93935789%3A0x2039bc558cd031a1!2z157XldeW15nXkNeV158g15TXqNem15zXmdeUINec15DXnteg15XXqiDXoteb16nXldeV15nXqg!5e0!3m2!1siw!2sil!4v1791288315824!5m2!1siw!2sil"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </footer>
-  </body>
+  </main>
+</body>
+
 </html>

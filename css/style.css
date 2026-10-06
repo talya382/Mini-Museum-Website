@@ -1,89 +1,252 @@
-/* ===== Step 2: Type Selectors ===== */
+body {
+    background-color: #f5f3ef;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
 
 h1 {
-  color: darkslateblue;
-  font-size: 40px;
+    background-color: #1f1f1f;
+    font-size: 42px;
+    text-align: center;
 }
 
 h2 {
-  color: teal;
-  font-size: 28px;
+    background-color: #333333;
+    font-size: 32px;
+    text-align: center;
 }
 
 nav a {
-  text-transform: uppercase;
-  font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+header nav a {
+    color: #ecb039;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #333333;
+    padding: 10px 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.previews {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
 }
 
 footer {
-  background-color: #333333;
-  color: white;
+    background-color: #222222;
+    color: #f5f3ef;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
 }
 
-/* ===== Step 3: Class Selectors ===== */
+.card {
+    border: 8px #ecb039 ;
+    transition: 0.3s;
+    width: 450px;
+    height: 350px;
+
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card p {
+    text-align: center;
+
+}
+
+.mini-card {
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+
+
+}
+
+.mini-card p {
+    text-align: center;
+    
+}
+
+#maps {
+    height: 200px;
+    width: 550px;
+    border-radius: 8px;
+
+}
+address{
+    text-align: center;
+    border: 4px  #ecb039;
+}
+
+button {
+    background-color: #ecb039;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 80px;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+
+#btn-back {
+    text-align: center;
+    color: wheat;
+    display: flex;
+}
+.card-visit{
+    text-align: center;
+
+}
+ul{
+    list-style: none;
+}
+#Museum_Hours {
+    text-align: right;
+}
 
 .artist-card {
-  border: 2px solid darkslateblue;
-  border-radius: 10px;
-  background-color: lavender;
+    border: 1px solid #d6d0c8;
+    border-radius: 12px;
+    background-color: #ffffff;
+    width: 600px;
+    margin: 20px auto;
 }
-
+.artist-card figure {
+    text-align: center;
+}
+.artist-card img {
+    max-width: 100%;
+    height: auto;
+}
 .thumbnail {
-  border: 3px solid #333333;
-  border-radius: 8px;
+    border: 2px solid #d6d0c8;
+    border-radius: 8px;
+    gap: 20px;
+    transform: scale();
+    box-shadow: saddlebrown;
+    border-radius: 9px;
 }
 
-/* ===== Step 4: Id Selectors ===== */
-
-#vangogh h2 {
-  color: goldenrod;
+#Vincent-van-Gogh {
+    color: #355C7D;
 }
 
-#monet h2 {
-  color: cornflowerblue;
+#Claude-Monet {
+    color: #6B8068;
 }
 
-#rembrandt h2 {
-  color: saddlebrown;
+#embrandt-van-Rijn {
+    color: #8A6842;
 }
 
-#welcome-text {
-  font-size: 22px;
-}
-
-/* ===== Step 5: Parent + Child Selectors ===== */
-
-header nav a {
-  color: darkslateblue;
+#welcome {
+    font-size: 22px;
+    color: #555555;
+    width: 700px;
+    text-align: center;
 }
 
 main article h2 {
-  font-size: 32px;
+    color: #7a5c3e;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-footer a {
-  color: white;
+footer p {
+    color: #f5f3ef;
+    font-size: 14px;
+    text-align: center;
 }
 
-/* ===== Step 6: Specificity Check ===== */
-
-/*
-  The "Visit Us" <h2> in visit.html has class="section-title".
-  Two rules try to color it:
-    h2             { color: teal; }     (type selector, Step 2)
-    .section-title { color: crimson; }  (class selector, below)
-  Crimson wins: a class selector is more specific than a type selector,
-  so it wins no matter which rule comes first in the file.
-*/
-
-.section-title {
-  color: crimson;
+#pic1,
+#pic4,
+#pic7 {
+    width: 400px;
+    border-radius: 8px;
 }
 
-/*
-  Specificity scores (id, class, type):
-    h2              -> (0, 0, 1)  one type
-    .artist-card    -> (0, 1, 0)  one class
-    #vangogh h2     -> (1, 0, 1)  one id + one type
-    header nav a    -> (0, 0, 3)  three types
+#pic2,
+#pic5,
+#pic8 {
+    width: 300px;
+    border-radius: 8px;
+}
+
+#pic3,
+#pic6,
+#pic9 {
+    width: 450px;
+    border-radius: 8px;
+}
+
+#popap1 {
+    display: none;
+}
+
+#popap1:target {
+    display: block;
+}
+
+#welcom-museum2 {
+    color: #ecb039;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Q6
+1.
+For example,
+h2 {
+ color: black; 
+ } 
+.visit {
+ color: red; 
+ }
+ if h2 has color: black and .visit has color: red, the red color wins because the class selector .
+ visit is more specific than the type selector h2
+**********
+2.
+Calculate score :
+main article h2---(0.0.3)
+#welcome       ---(1.0.0)
+
+
 */
