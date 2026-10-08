@@ -5,7 +5,15 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-
+#title  {
+    background-color: #333333;
+    color: #ecb039;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
 
 h1 {
     background-color: #1f1f1f;
@@ -27,7 +35,7 @@ nav a {
 nav ul {
     display: flex;
     gap: 10px;
-    justify-content: flex-start;
+    justify-content: start;
     padding: 0;
     margin: 0;
 }
@@ -41,11 +49,7 @@ header nav a {
 nav {
     background-color: #333333;
     padding: 10px 12px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
-}
+    }
 
 .previews {
     display: flex;
@@ -64,7 +68,6 @@ footer {
     background-color: #222222;
     color: #f5f3ef;
     padding: 25px;
-    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,19 +75,34 @@ footer {
 }
 
 .card {
-    border: 8px #ecb039 ;
-    transition: 0.3s;
-    width: 450px;
-    height: 350px;
-
+    position: relative;
+    width: 250px;
+    height: 300px;
+}
+.card a {
+    color: #ecb039;
+    font-weight: bold;
 }
 
+.card figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 .card img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    height: auto;
+  
 }
 
 .card p {
@@ -93,8 +111,7 @@ footer {
 }
 
 .mini-card {
-    box-shadow: 0 4px 8px 0;
-    transition: 0.3s;
+
     width: 80px;
     height: 40px;
     display: flex;
@@ -116,9 +133,13 @@ footer {
     border-radius: 8px;
 
 }
+#maps-visit {
+    position: relative;
+    left: 21%;
+}
 address{
     text-align: center;
-    border: 4px  #ecb039;
+    border: 4px  #ecb039 solid;
 }
 
 button {
@@ -163,12 +184,10 @@ ul{
     height: auto;
 }
 .thumbnail {
+    display: inline;
     border: 2px solid #d6d0c8;
     border-radius: 8px;
-    gap: 20px;
-    transform: scale();
-    box-shadow: saddlebrown;
-    border-radius: 9px;
+    margin-right: 20px;
 }
 
 #Vincent-van-Gogh {
@@ -179,7 +198,7 @@ ul{
     color: #6B8068;
 }
 
-#embrandt-van-Rijn {
+#rembrandt-van-Rijn {
     color: #8A6842;
 }
 
@@ -207,21 +226,21 @@ footer p {
 #pic1,
 #pic4,
 #pic7 {
-    width: 400px;
+    width: 300px;
     border-radius: 8px;
 }
 
 #pic2,
 #pic5,
 #pic8 {
-    width: 300px;
+    width: 220px;
     border-radius: 8px;
 }
 
 #pic3,
 #pic6,
 #pic9 {
-    width: 450px;
+    width: 340px;
     border-radius: 8px;
 }
 
@@ -271,6 +290,6 @@ h2 {
 Calculate score :
 main article h2---(0.0.3)
 #welcome       ---(1.0.0)
-
+#pic2,#pic5,#pic8---(3.0.0)
 
 */
